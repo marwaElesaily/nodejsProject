@@ -15,7 +15,7 @@ const adminSchema = mongoose.Schema({
 });
 
 adminSchema.pre("save", function (next) {
-  // console.log(this)();
+  // console.log(this)(;
   const salt = bcrypt.genSaltSync(12);
   const hashedPassword = bcrypt.hashSync(this.Password, salt);
   this.Password = hashedPassword;
