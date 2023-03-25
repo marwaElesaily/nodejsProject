@@ -68,7 +68,7 @@ router.post("/", async (req, res, next) => {    // save new game
 
 });
 
-router.patch("/:id", async (req, res) => {   // update new game
+router.patch("/:id", async (req, res) => {   // update game
 
   var id = req.params.id;
   var obj = req.body;
