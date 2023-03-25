@@ -38,7 +38,7 @@ router.post("/", async (req, res) => {   // create category
   }
 });
 
-router.delete("/:id", async(req, res) => {
+router.delete("/:id", async(req, res) => {    // delete category
   var id = req.params.id;
 
   try {
